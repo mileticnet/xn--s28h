@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>😎 is GASERI</title>
+
+    <script>
+        window.onload = function () {
+            const currentLocation = window.location.href;
+            if (currentLocation.startsWith('https://xn--s28h.miletic.net')) {
+                const redirectLocation = currentLocation.replace(
+                    'https://xn--s28h.miletic.net',
+                    'https://group.miletic.net'
+                );
+                document.body.innerHTML = '<p>Please follow <a href="' + redirectLocation + '">this link</a>.</p>';
+                window.location.replace(redirectLocation);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Please follow <a href="https://group.miletic.net/">this link</a>.</p>
+</body>
+
+</html>
